@@ -1849,13 +1849,13 @@ function getRenderer(complete, takUrl) {
       ['a12', '1242x2688', ['iPhone Xs Max']],
       ['a12x', '1668x2388', ['iPad Pro (3rd gen 11-inch)']],
       ['a12x', '2048x2732', ['iPad Pro (3rd gen 12.9-inch)']],
-      ['a13', '828x1792', ['iphone 11']],
-      ['a13', '1125x2436', ['iphone 11 Pro']],
-      ['a13', '1242x2688', ['iphone 11 Pro max']],
-      ['a14', '1170x2532', ['iphone 12']],
-      ['a14', '1080x2340', ['iphone 12 mini']],
-      ['a14', '1170x2532', ['iphone 12 Pro']],
-      ['a14', '1284x2778', ['iphone 12 Pro max']],    ];
+      ['a13', '828x1792', ['iPhone 11']],
+      ['a13', '1125x2436', ['iPhone 11 Pro']],
+      ['a13', '1242x2688', ['iPhone 11 Pro max']],
+      ['a14', '1170x2532', ['iPhone 12']],
+      ['a14', '1080x2340', ['iPhone 12 mini']],
+      ['a14', '1170x2532', ['iPhone 12 Pro']],
+      ['a14', '1284x2778', ['iPhone 12 Pro max']],    ];
 
   function getCanvas() {
     if (canvas == null) {
