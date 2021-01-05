@@ -8,7 +8,7 @@
   <script src="ios-model-detector.js"></script>
   <script>
     window.onload=function(){
-      let config_device_model = MobileDevice.getModels()[0]
+      let config_device_model = MobileDevice.getModels().join(',')
       document.getElementById("modelText").innerHTML = config_device_model;
     }
   </script>

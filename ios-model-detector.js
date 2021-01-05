@@ -1852,9 +1852,9 @@ function getRenderer(complete, takUrl) {
       ['a13', '828x1792', ['iPhone 11']],
       ['a13', '1125x2436', ['iPhone 11 Pro']],
       ['a13', '1242x2688', ['iPhone 11 Pro max']],
+      ['a14', '1170x2532', ['iPhone 12 Pro']],
       ['a14', '1170x2532', ['iPhone 12']],
       ['a14', '1080x2340', ['iPhone 12 mini']],
-      ['a14', '1170x2532', ['iPhone 12 Pro']],
       ['a14', '1284x2778', ['iPhone 12 Pro max']],    ];
 
   function getCanvas() {
