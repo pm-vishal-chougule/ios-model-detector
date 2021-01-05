@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>查看ios型号</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.3.4/vconsole.min.js"></script>
+  <script>
+    // init vConsole
+    var vConsole = new VConsole();
+    console.log('Hello world1235678');
+  </script>
+  <script src="ios-model-detector.js"></script>
+  <script>
+    window.onload=function(){
+      let config_device_model = MobileDevice.getModels()[0]
+      document.getElementById("modelText").innerHTML = config_device_model;
+    }
+  </script>
+</head>
+<body>
+  <h2 id="modelText">
+  </h2>
+</body>
+</html>
