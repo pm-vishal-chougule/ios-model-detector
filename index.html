@@ -6,15 +6,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
   <script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.3.4/vconsole.min.js"></script>
   <script src="ios-model-detector.js"></script>
-  <script>
-    window.onload=function(){
-      let config_device_model = MobileDevice.getModels().join(',')
-      document.getElementById("modelText").innerHTML = config_device_model;
-    }
-  </script>
 </head>
 <body>
-  <h2 id="modelText">
-  </h2>
+  <h1>GPU: <script>document.write(MobileDevice.getGlRenderer());</script></h1>
+  <h1>Resolution: <script>document.write(MobileDevice.getResolution());</script></h1>
+  <h1>Device Models: <script>document.write(MobileDevice.getModels());</script></h1>
 </body>
 </html>
