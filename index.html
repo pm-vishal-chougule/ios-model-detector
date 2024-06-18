@@ -2,14 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>查看ios型号</title>
+  <title>Device Details</title>
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <script src="https://cdn.bootcdn.net/ajax/libs/vConsole/3.3.4/vconsole.min.js"></script>
-  <script src="ios-model-detector.js"></script>
+  <!-- <meta http-equiv="Accept-CH" content="Sec-CH-UA, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-Mobile, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version"> -->
+  <meta http-equiv="Delegate-CH" content="Sec-CH-UA https://owsdk-stagingams.pubmatic.com; Sec-CH-UA-Full-Version-List https://owsdk-stagingams.pubmatic.com; Sec-CH-UA-Model https://owsdk-stagingams.pubmatic.com; Sec-CH-UA-Mobile https://owsdk-stagingams.pubmatic.com; Sec-CH-UA-Platform https://owsdk-stagingams.pubmatic.com; Sec-CH-UA-Platform-Version https://owsdk-stagingams.pubmatic.com;">
+  <script src="https://owsdk-stagingams.pubmatic.com:8443/sdk/android-devicemodel/android-device-model.js"></script>
+  <script>
+    // navigator.userAgentData.getHighEntropyValues(['platformVersion', 'model', ]).then(ua => { 
+    //   console.log(ua);
+    //   document.getElementById("device_model").innerHTML = ua.model;
+    //   document.getElementById("device_platform_version").innerHTML = ua.platformVersion;
+    // });
+  </script>
 </head>
 <body>
-  <h1>GPU: <script>document.write(MobileDevice.getGlRenderer());</script></h1>
-  <h1>Resolution: <script>document.write(MobileDevice.getResolution());</script></h1>
-  <h1>Device Models: <script>document.write(MobileDevice.getModels());</script></h1>
+  <h1>Device Model: <div id="device_model"></div></h1>
+  <h1>Android Version: <div id="device_platform_version"></div></h1>
 </body>
 </html>
